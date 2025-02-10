@@ -129,11 +129,7 @@ In our exploratory data analysis (EDA), we delved into various aspects of the da
 ## Model Building
 * Utilized RandomForestRegressor with RMSE as the loss function for predicting CO2 levels.
 
-Achieved RMSE score of 604 indicating i should consider tuning hyperparameters to allow the model generalize well by;
-Reducing max_depth,
-Increasing min_samples_split,
-Reducing n_estimators, and
-Using max_features='sqrt'
+Achieved RMSE score of 4.56 by performing cross validation on the train set
 
 * Leaderboard (LB) score of 4.59 for performance on the competition's test dataset (4th Place Score).
 
