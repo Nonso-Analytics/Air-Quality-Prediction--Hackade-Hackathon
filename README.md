@@ -110,9 +110,15 @@ MQ9_analog, MG811_analog, MQ135_analog, device_name
 In our exploratory data analysis (EDA), we delved into various aspects of the dataset to understand its characteristics and relationships. Here are some key insights:
 
 - The distribution features is explored using sns pairplots, revealing trends and possible outliers.
+  ![image](https://github.com/user-attachments/assets/a728a1d5-bdb5-4dfa-8e06-5ef0153454da)
+
 - The distribution of C02 is analyzed, highlighting positive skewness and the presence of outliers.
+ ![image](https://github.com/user-attachments/assets/0a56114b-e47c-4e1f-97e2-2212a4745331)
+
 - Missing values were not identified
 - Correlation analysis showcases the relationships between features and the target variable ( CO2), guiding feature selection for modeling.
+  ![image](https://github.com/user-attachments/assets/0fc90ab1-dbd4-416d-ab8d-9b0a617a441a)
+
 
 # Data Preprocessing and Feature Engineering
 
@@ -127,6 +133,7 @@ In our exploratory data analysis (EDA), we delved into various aspects of the da
 # Machine Learning Workload
 
 ## Model Building
+
 * Utilized RandomForestRegressor with RMSE as the loss function for predicting CO2 levels.
 
 Achieved RMSE score of 4.56 by performing cross validation on the train set
@@ -134,6 +141,7 @@ Achieved RMSE score of 4.56 by performing cross validation on the train set
 * Leaderboard (LB) score of 4.59 for performance on the competition's test dataset (4th Place Score).
 
 ## Features Importance
+![image](https://github.com/user-attachments/assets/a3d81ccb-c3d0-4e6d-acf3-3b14d844615f)
 * Top three important features: "Humidity," "MG811_analog"," and "mq7_mq9_ratio" (14.81%, 17.20%, 16.59%).
 
 * Significant contributions from "MQ7_analog" (13.19%), "MQ9_analog" (10.59%) and "Temperature" (8.46%).
@@ -144,4 +152,4 @@ Achieved RMSE score of 4.56 by performing cross validation on the train set
 ```python
 
 ```
-"# Air-Quality-Prediction--Hackade-Hackathon" 
+
